@@ -1,0 +1,24 @@
+"""
+This is a comment
+"""
+type Comment {
+  comment: String!
+  id: ID!
+  post: Post
+}
+
+"""
+This is a blog post
+"""
+type Post {
+  comments: [Comment!]
+  id: ID!
+  title: String!
+}
+
+"""
+The query root of this schema
+"""
+type Query {
+  post(id: ID!): Post!
+}
