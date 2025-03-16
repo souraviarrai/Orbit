@@ -1,5 +1,5 @@
 module Resolvers
-  class PostResolver < GraphQL::Schema::Resolver
+  class Post < GraphQL::Schema::Resolver
     type Types::PostType, null: false
     argument :id, ID, required: true
 
